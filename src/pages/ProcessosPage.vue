@@ -7,7 +7,7 @@
     <!-- Seção de busca e botão -->
     <div class="row items-center q-gutter-md">
       <q-btn @click="openDialog" label="Adicionar Processo" color="primary" />
-      <q-input v-model="search" placeholder="Buscar Proc..." clearable @input="filterProcessos" />
+      <q-input v-model="search" placeholder="Buscar Processo" clearable @input="filterProcessos" />
     </div>
     <!-- Tabela de processos -->
     <q-table
