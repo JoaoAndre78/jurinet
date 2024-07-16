@@ -15,8 +15,9 @@
 
     <!-- Informações e Recursos -->
     <div class="q-gutter-md">
+
       <!-- Cards de Destaque -->
-      <div class="row items-stretch justify-center q-mb-md">
+             <div class="row items-stretch justify-center q-mb-md">
         <q-card class="q-pa-md" style="max-width: 300px;">
           <q-card-section>
             <div class="text-h6 text-center">Clientes</div>
@@ -46,13 +47,30 @@
             </div>
           </q-card-section>
         </q-card>
+        <q-card class="q-pa-md" style="max-width: 300px;">
+          <q-card-section>
+            <div class="text-h6 text-center">Contratos</div>
+          </q-card-section>
+          <q-card-section>
+            <div class="text-center">
+              <q-icon name="folder" size="50px" color="primary" />
+            </div>
+            <div class="text-center q-mt-md">
+              <h2 class="text-h5">{{ processos.length }}</h2>
+              <p class="text-caption">Contratos Registrados</p>
+            </div>
+          </q-card-section>
+        </q-card>
       </div>
 
       <!-- Atalhos e Ações Rápidas -->
       <div class="row justify-center">
         <q-btn class="q-mr-md" @click="navigateTo('/clientes')"
         label="Ver Clientes" color="primary" />
-        <q-btn @click="navigateTo('/processos')" label="Ver Processos" color="primary" />
+        <q-btn class="q-mr-md" @click="navigateTo('/processos')"
+         label="Ver Processos" color="primary" />
+        <q-btn class="q-mr-md" @click="navigateTo('/contratos')"
+         label="Ver Contratos" color="primary" />
       </div>
     </div>
   </q-page>
@@ -67,6 +85,10 @@ defineProps({
     default: 0,
   },
   processos: {
+    type: Number,
+    default: 0,
+  },
+  contratos: {
     type: Number,
     default: 0,
   },

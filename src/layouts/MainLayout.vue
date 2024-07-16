@@ -26,6 +26,13 @@
             @click="navigateTo('/clientes')"
             :class="{'animated-click': clickedClientes}"
           />
+          <q-btn
+            flat
+            label="CONTRATOS"
+            class="q-btn-item non-selectable no-outline"
+            @click="navigateTo('/contratos')"
+            :class="{'animated-click': clickedContratos}"
+          />
         </q-toolbar-title>
       </q-toolbar>
     </q-header>
