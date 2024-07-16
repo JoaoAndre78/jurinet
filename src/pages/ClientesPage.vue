@@ -5,7 +5,7 @@
     </div>
     <div class="row items-center q-gutter-md">
       <q-btn @click="openDialog" label="Adicionar Cliente" color="primary" />
-      <q-input v-model="search" placeholder="Buscar Cliente..." clearable @input="filterClientes" />
+      <q-input v-model="search" placeholder="Buscar Cliente" clearable @input="filterClientes" />
     </div>
     <q-table
       :rows="filteredClientes"
